@@ -1,4 +1,4 @@
-# Docker mit Linux-Hausmitteln
+# Container mit Linux-Hausmitteln
 
 ### Was genau macht einen Container aus?
 - Keine VM
@@ -6,16 +6,16 @@
   - Betriebssystemkern
   - Geteilter RAM
   - ...
-- Isolation eines Prozesses vom restlichen System
+- Isolation "eines" Prozesses vom restlichen System
   - übriges System kann den Prozess sehen
   - Prozess aber nicht das übrige System
-  - Isolation auf Netzwerkebene
-    - Freigabe einzelner Zugriff
-    - komplette Freigabe ("host-net")
-  - Isolation des Dateisystems
-    - chroot (kennt, wer mal sein System retten musste)
-  - limitierung von Ressourcen
-    - cgroups für Hauptspeicher und CPU
+- Isolation auf Netzwerkebene
+  - Freigabe einzelner Zugriff
+  - komplette Freigabe ("host-net")
+- Isolation des Dateisystems
+  - chroot (kennt, wer mal sein System retten musste)
+- limitierung von Ressourcen
+  - cgroups für Hauptspeicher und CPU
     
 ### Das können wir alles mit Linux-Bordmitteln nachspielen
 - Prozessisolation
